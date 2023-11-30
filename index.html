@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa Jardín de la Isla</title>
+
+    <link rel="stylesheet" href="leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <!-- <header>
+      <div class="logo">
+        <a href="index.html"
+          ><img src="img/icono.png" alt="Logo image" height="120px" id="logo"
+        /></a>
+      </div>
+      <div class="cabecera">
+        <h1>Patrimonio nacional</h1>
+        <h3>Recursos de códigos QR</h3>
+      </div>
+    </header> -->
+
+    <div id="map"></div>
+    <button id="geolocalizar">Activar Geolocalización</button>
+    <h1>Jardín de la Isla</h1>
+    <div class="legend">
+      <button id="collapseLegend">X</button>
+      <ul>
+        <li>
+          <a href="#" onclick="markerReina.fire('click')"
+            >Entrada por el jardin de la reina.</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="markerParterre.fire('click')"
+            >Entrada por el jardin del Parterre.</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="markerBoticaria.fire('click')"
+            >Fuente de la Boticaria.</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="markerPresa.fire('click')">Presa de palacio.</a>
+        </li>
+        <li>
+          <a href="#" onclick="markerHercules.fire('click')"
+            >Hercules y la hidra.</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="markerEstatuas.fire('click')"
+            >Jardín de las estatuas.</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="markerCastañuelas.fire('click')"
+            >Cascada de las castañuelas.</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="markerApolo.fire('click')">Fuente de Apolo.</a>
+        </li>
+        <li>
+          <a href="#" onclick="markerGaleria.fire('click')">La galeria.</a>
+        </li>
+        <li>
+          <a href="#" onclick="markerReloj.fire('click')">Fuente del reloj.</a>
+        </li>
+        <li>
+          <a href="#" onclick="markerSalonReyes.fire('click')"
+            >Salon de los Reyes Catolicos.</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="markerNiño.fire('click')"
+            >Fuente del niño de la espina.</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="markerPajarera.fire('click')">La pajarera.</a>
+        </li>
+        <li><a href="#" onclick="markerCenador.fire('click')">Cenador.</a></li>
+        <li>
+          <a href="#" onclick="markerVenus.fire('click')">Fuente de Venus.</a>
+        </li>
+        <li>
+          <a href="#" onclick="markerObelisco.fire('click')">El obelisco.</a>
+        </li>
+        <li>
+          <a href="#" onclick="markerPuente.fire('click')"
+            >Antigüo puente verde.</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="markerMirador.fire('click')"
+            >Mirador del culón.</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="markerNeptuno.fire('click')"
+            >Fuente de Neptuno.</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="markerBaco.fire('click')">Fuente de Baco.</a>
+        </li>
+        <li>
+          <a href="#" onclick="markerRosedal.fire('click')">El rosedal.</a>
+        </li>
+        <li>
+          <a href="#" onclick="markerDiana.fire('click')">Fuente de Diana.</a>
+        </li>
+        <li>
+          <a href="#" onclick="markerTronca.fire('click')"
+            >Plátanos de la Tronca.</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="markerLlóron.fire('click')">Plátano Llóron.</a>
+        </li>
+      </ul>
+    </div>
+    <script src="leaflet.js"></script>
+    <script src="iconos_numerados.js"></script>
+    <script src="script.js"></script>
+    <script src="geolocalizacion.js"></script>
+    <script src="collapse.js"></script>
+  </body>
+</html>
